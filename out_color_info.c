@@ -34,12 +34,14 @@
 #define MAKE_SIGN	"***"
 
 #define WARNING	"warning:"
+#define WARNING1	"warning "
 #define ERROR	"error:"
+#define ERROR1	"error "
 #define NOTE	"note:"
 #define WARNING_CN	"警告："
 #define ERROR_CN	"错误："
 #define NOTE_CN		"附注："
-#define MARK_NUM	6
+#define MARK_NUM	8
 
 #define TRUE	1
 #define FALSE	0
@@ -54,7 +56,9 @@ struct mark_st
 static struct mark_st Mark[MARK_NUM] = 
 {
 	{WARNING,    WARNING_COLOR, WARNING_COLOR "warning" COLOR_END ":"},
+	{WARNING1,    WARNING_COLOR, WARNING_COLOR "warning" COLOR_END ":"},
 	{ERROR,      ERROR_COLOR,   ERROR_COLOR "error" COLOR_END ":"},
+	{ERROR1,      ERROR_COLOR,   ERROR_COLOR "error" COLOR_END ":"},
 	{NOTE,       NOTE_COLOR,    NOTE_COLOR "note" COLOR_END ":"},
 	{WARNING_CN, WARNING_COLOR, WARNING_COLOR "警告" COLOR_END "："},
 	{ERROR_CN,   ERROR_COLOR,   ERROR_COLOR "错误" COLOR_END "："},
